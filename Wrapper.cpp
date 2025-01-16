@@ -51,7 +51,7 @@ public:
     }
 };
 // Global consturctor that be called while loading
-AssemblyResolver instance = AssemblyResolver();
+AssemblyResolver AssemblyResolver::instance = AssemblyResolver();
 
 using namespace System;
 
