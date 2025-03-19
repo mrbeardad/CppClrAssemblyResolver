@@ -44,7 +44,7 @@ public:
             path = path.substr(4);
         }
         auto prefix = path.rfind(L'\\');
-        if (prefix == std::wstring::npos) {
+        if (prefix != std::wstring::npos) {
             path.resize(prefix + 1);
             InitAssemblyResolveHandler(path);
         }
